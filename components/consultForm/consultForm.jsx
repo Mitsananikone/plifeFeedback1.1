@@ -134,7 +134,7 @@ export default function ConsultationForm(style) {
       )}
 
       <button
-        className="bg-gray-600 opacity-60 text-black font-bold py-2 px-4 rounded whitespace-nowrap h-16 shadow-lg hover:shadow-xl hover:opacity-90 transition-all my-8 w-64 hover:text-white mb-32"
+        className="bg-gray-400 opacity-60 text-black font-bold py-2 px-4 rounded whitespace-nowrap h-16 shadow-lg hover:shadow-xl hover:opacity-90 transition-all my-8 w-64 hover:text-white mb-32"
         type="submit"
         onClick={handleSubmit} 
       >

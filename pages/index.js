@@ -1,4 +1,4 @@
-import LandingPage from './home/page'
+import LandingPage from './home/landingpage'
 import AboutPage from './about/page';
 import ProcedurePage from './procedures/surgeryMovingHighlight';
 import TreatmentCard from '@/components/treatmentCard/treatmentCard';
@@ -9,17 +9,26 @@ import BreastImplantInfo from '@/components/cosmeticSurgeryInfo/breastImplant/br
 import LandingPopup from '@/components/landing/page';
 import ContactFire from '@/components/contactFire/contactFire';
 
+import AnimInfoCard from '@/components/animInfoCard/animInfoCard';
 
 export default function Home() {
     return (
  <>
-        <LandingPopup/>
+        {/* <LandingPopup/> */}
      <div style={{display: 'flex', alignItems: 'center', justifyItems: 'center'}}> 
    
      {/* <Slick/> */}
 {/* <ContactFire/> */}
             <LandingPage />
        
+            {/* <div> */}
+      {/* <AnimInfoCard 
+        backgroundImage="/images/home/home3.png"
+        title="Your Title"
+        body="Your description here."
+      /> */}
+    {/* </div> */}
+
             {/* <AboutPage/>
             <ProcedurePage/> */}
            
