@@ -6,8 +6,20 @@ import  Navbar  from '@/components/nav/nav';
 import Footer from '@/components/footer/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
- export default function App({ Component, pageProps }) {
+import markerSDK from '@marker.io/browser';
 
+
+ export default function App({ Component, pageProps }) {
+    useEffect(() => {
+        async function initializeMarker() {
+          const widget = await markerSDK.loadWidget({
+            project: '64f9013cd15407380f6eeef2',
+          });
+        }
+        
+        initializeMarker();
+      }, []);
+      
     return (
         <>
             <Head>           
