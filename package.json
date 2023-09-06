@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@marker.io/browser": "^0.19.0",
     "autoprefixer": "^10.4.14",
     "bootstrap": "^5.3.1",
     "caniuse-lite": "^1.0.30001524",
