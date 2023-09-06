@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.navContainer}>
-        <Link href="/home/page" passHref>
+        <Link href="/home/landingpage" passHref>
           <img
             src="/images/logo.svg"
             alt="Logo"
