@@ -41,9 +41,9 @@ const FadeInSection = ({ children }) => {
 
 const Slideshow = () => {
     const images = [
-        "/images/home/home1.png",
-        "/images/home/home2.png",
-        "/images/home/home3.png",
+        "/images/home/home1.jpg",
+        "/images/home/home2.jpg",
+        "/images/home/home3.jpg",
     ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
