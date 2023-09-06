@@ -100,14 +100,14 @@
 }
 
 
-.cardTitle {
+ /* .cardTitle {
   color: white;
   z-index: 10;
   text-align: center;
   margin: 0;
   transition: all 500ms ease;
-  /* margin-top: -100px; */
-}
+
+}  */
 
 .card:hover .cardTitle::after,
 .card:focus-within .cardTitle::after {

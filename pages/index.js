@@ -14,7 +14,7 @@ import AnimInfoCard from '@/components/animInfoCard/animInfoCard';
 export default function Home() {
     return (
  <>
-        <LandingPopup/> 
+        <LandingPopup/>
      <div style={{display: 'flex', alignItems: 'center', justifyItems: 'center'}}> 
    
      {/* <Slick/> */}
