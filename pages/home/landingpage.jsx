@@ -32,7 +32,7 @@ const FadeInSection = ({ children }) => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 100 },
             }}
-            transition={{ duration: 1.5, ease: "easeOut", delay: 1 }}
+            transition={{ duration: 1.5, ease: "easeOut", delay: 0.8 }}
         >
             {children}
         </motion.div>
