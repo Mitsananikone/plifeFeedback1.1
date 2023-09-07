@@ -15,15 +15,15 @@ import PricingPage from './pricing/pricingPage';
 export default function Home() {
   return (
     <>
-       <LandingPopup/> 
+      {/* <LandingPopup/> */}
       <div className="full-flex-centered">
- <LandingPage /> 
 
-
-    
         {/* <Slick/> */}
         {/* <ContactFire/> */}
-        // <PricingPage />
+        {/* <LandingPage /> */}
+
+
+        <PricingPage />
 
         {/* <div> */}
         {/* <AnimInfoCard 

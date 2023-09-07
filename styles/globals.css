@@ -27,7 +27,7 @@ html, body {
   margin: 0;
   padding: 0;
   border: 0;
-  z-index: -999999999;
+  z-index: -100;
   
 
 }
@@ -40,7 +40,7 @@ html, body {
   height: 100vh;
   background-position: center;
   background-size: cover;
-  margin-top: -4em;
+  z-index: -200;
 }
 
 
@@ -88,7 +88,7 @@ html, body {
   align-items: center;
   width: 100vw;
   height: 100%;
-  z-index: -9999;
+  z-index: 9999;
 
 }
 
