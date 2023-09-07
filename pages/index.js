@@ -8,33 +8,37 @@ import CosmeticSurgeryCard from '@/components/cosmeticSurgeryInfo/cosmeticSurger
 import BreastImplantInfo from '@/components/cosmeticSurgeryInfo/breastImplant/breastImplant';
 import LandingPopup from '@/components/landing/page';
 import ContactFire from '@/components/contactFire/contactFire';
-
 import AnimInfoCard from '@/components/animInfoCard/animInfoCard';
+import Packages from '@/components/packages/packages';
+import PricingPage from './pricing/pricingPage';
 
 export default function Home() {
-    return (
- <>
-        <LandingPopup/>
-     <div style={{display: 'flex', alignItems: 'center', justifyItems: 'center'}}> 
-   
-     {/* <Slick/> */}
-{/* <ContactFire/> */}
-            <LandingPage />
-       
-            {/* <div> */}
-      {/* <AnimInfoCard 
+  return (
+    <>
+      {/* <LandingPopup/> */}
+      <div className="full-flex-centered">
+
+        {/* <Slick/> */}
+        {/* <ContactFire/> */}
+        {/* <LandingPage /> */}
+
+
+        <PricingPage />
+
+        {/* <div> */}
+        {/* <AnimInfoCard 
         backgroundImage="/images/home/home3.png"
         title="Your Title"
         body="Your description here."
       /> */}
-    {/* </div> */}
+        {/* </div> */}
 
-            {/* <AboutPage/>
+        {/* <AboutPage/>
             <ProcedurePage/> */}
-           
 
-            {/* </div> */}
-        </div>
-        </>
-    );
+
+        {/* </div> */}
+      </div>
+    </>
+  );
 }
