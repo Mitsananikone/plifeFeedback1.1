@@ -1,0 +1,169 @@
+.card_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  height: 85vh;
+  justify-content: center;
+}
+
+.card {
+  width: 60vw;
+  height: 25vh;
+  margin: 20px 0;
+  border: 1px solid #0000008f;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 2s;
+  position: relative;
+  background-color: #f7f7f7; /* Optional background color for better visibility */
+  display: flex; /* Make children layout side by side */
+  z-index: 99;
+  /* cursor: pointer; */
+  
+}
+
+.card.selected {
+  border: 2px solid lime;
+  border-radius: 10px;
+  transition: border 0.3s;
+}
+
+.card_image {
+  flex: 0 0 25%;
+  height: 100%;
+  opacity: 0;
+  background-size: cover;
+  background-position: center;
+  position: relative; 
+  cursor: pointer;
+  transition: opacity 2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.card_image:hover {
+  filter: brightness(0.7); /* Darken the image on hover */
+}
+
+.card_image.active {
+  filter: brightness(0.7); /* Darken the image */
+  border: 2px solid lime;
+}
+
+.card:hover {
+  /* border: 2px solid red; */
+  border-radius: 10px;
+  transform: scale(1.05);
+}
+
+.card:hover .card_image {
+  opacity: 1; /* Visible on hover */
+}
+
+.card:hover .card_content {
+  opacity: 1; /* Visible on hover */
+  transform: translateY(0); /* Slide down the description when the card is hovered */
+}
+
+.card_content {
+
+  opacity: 0;
+  transform: translateY(-100%); /* Positioned it out of the card initially */
+  transition: opacity 2s, transform 2s; 
+  background: linear-gradient(to top, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  pointer-events: none; /* Ensure the hidden content doesn't block interactions */
+  position: absolute;
+  bottom: 5%; /* Positioned closer to the bottom */
+  padding: 1rem;
+  padding-right: 0.5rem;
+  text-align: right;
+}
+
+.card:hover .card_content {
+  opacity: 1;
+  transform: translateY(0); 
+}
+
+.fade_text {
+ 
+  color: #000;
+  padding: 5px;
+  font-size: large;
+  opacity: 1;
+  text-align: right;
+}
+
+.card h2 {
+  color: white;
+  font-size: 1.5rem;
+  text-align: left;           /* Adjust the text alignment */
+  padding: 10px;              /* Add some padding for spacing */
+  margin: 0;
+  z-index: 2;                 /* Adjusted z-index for visibility on top */
+  position: absolute;         /* Changed from relative to absolute */
+  top: 10px;                  /* Position from the top */
+  right: 10px;                /* Position from the right */
+  text-shadow:
+  0.5px 0.5px 1px gray,
+  1px 1px 0px #888,
+  1.5px 1.5px 0px #555,
+  2.1px 2.1px 0px #222;
+  opacity: 1;                 /* Default opacity */
+  transition: opacity 0.5s;  /* Transition effect for opacity */
+}
+
+.card:hover h2 {
+  opacity: 0;                 /* Set opacity to 0 on hover */
+}
+
+.card_text {
+  flex: 0 0 75%; /* Take up 75% of the parent's width */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Needed for child absolute positioning */
+}
+
+
+.select_package {
+  position: absolute;
+  top: 50%;
+  left: 3em; /* This will position the text in the center of where the image would be */
+  transform: translate(-50%, -50%); /* Center the text */
+  font-size: 2rem;
+  color: #069235;
+  text-align: center;
+  font-weight: bold;
+  z-index: 3; /* Ensure the text appears above the image */
+  pointer-events: none; /* Make sure it doesn't interfere with hover on parent */
+  text-shadow:
+  0.5px 0.5px 1px gray,
+  1px 1px 0px #888,
+  1.5px 1.5px 0px #555,
+  2.1px 2.1px 0px #222;
+  opacity: 0; /* Default opacity to hidden */
+  transition: opacity 1.5s;  /* Transition effect for opacity */
+}
+
+.card.selected .select_package {
+  color: lime;
+  opacity: 1; /* When a card is selected, the text will be visible and red */
+}
+
+.card:hover .select_package {
+  opacity: 1; /* When card is hovered, the text is visible */
+}
+
+.select_package:hover > h2{
+  color: black;
+}

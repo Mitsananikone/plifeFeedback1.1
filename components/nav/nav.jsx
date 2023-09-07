@@ -15,7 +15,7 @@ const Navbar = () => {
     { name: "FAQ", link: "#faq" },
     { name: "RESOURCES", link: "/resources/pop_cosmeticsurgery/popup_allSurgeries" },
     { name: "QUOTE", link: "#quote" },
-    { name: "PRICING", link: "#pricing" },
+    { name: "PRICING", link: "/pricing/pricingPage" },
     { name: "PROMO", link: "#promo" },
     { name: "CONTACTS", link: "#contacts" }, 
   ];
