@@ -212,7 +212,7 @@ function LeftInfo3({ selectedCard }) {
 }
 
 export default function PricingPage() {
-  const [selectedCard, setSelectedCard] = useState(0);
+  const [selectedCard, setSelectedCard] = useState(null);
 
   const renderLeftInfo = () => {
     switch (selectedCard) {

@@ -55,7 +55,7 @@
 .sectionText p {
     margin-top: 2em;
     color: #303030;
-    line-height: 1.3;
+    line-height: 1.6;
     font-size: large;
 }
 .leftSide {
@@ -159,13 +159,12 @@
     display: flex;
     gap: 2em;
     margin-inline: 4em;
-    margin-bottom: 180px;
 }
 
 .mapContainer {
     /* border: 1px solid red; */
     flex: 4;   
-    height: 55vh;
+    height: 50vh;
 }
 
 .formContainer {

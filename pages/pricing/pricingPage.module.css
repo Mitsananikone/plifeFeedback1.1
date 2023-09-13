@@ -104,7 +104,7 @@
 
 
 .button:hover {
-    background: limegreen; /* Darker shade for hover effect */
+    background: lime; /* Darker shade for hover effect */
     scale: 1.1;
     color: white;
 }

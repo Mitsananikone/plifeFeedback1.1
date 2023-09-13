@@ -14,16 +14,7 @@ export default function ProceduresCard() {
     visible: { opacity: 1, color: 'white', transition: { duration: 1500} }, // Words are highlighted
   };
   
-  // const container = {
-  //   hidden: { opacity: 0 },
-  //   show: {
-  //     opacity: 1,
-  //     transition: {
-  //       staggerChildren: 4000, // each child animates 0.5s after the previous one
-  //     },
-  //   },
-  // };
-  
+
 
   const fitTitle = () => {
     const container = containerRef.current;
