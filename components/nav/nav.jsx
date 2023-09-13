@@ -10,13 +10,13 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { name: "ABOUT", link: "/about/page" },
+    { name: "ABOUT", link: "/about/aboutPage" },
     { name: "PROCEDURES", link: "/procedures/surgeryMovingHighlight" },
-    { name: "FAQ", link: "#faq" },
-    { name: "RESOURCES", link: "/resources/pop_cosmeticsurgery/popup_allSurgeries" },
-    { name: "QUOTE", link: "#quote" },
+    { name: "FAQ", link: "/faq/faqPage" },
+    { name: "RESOURCES", link: "/resource/resourcePage" },
+    { name: "QUOTE", link: "/quote/quotePage" },
     { name: "PRICING", link: "/pricing/pricingPage" },
-    { name: "PROMO", link: "#promo" },
+    { name: "PROMO", link: "/promo/promoPage" },
     { name: "CONTACTS", link: "/contacts/contactsPage" }, 
   ];
 
