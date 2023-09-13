@@ -18,27 +18,8 @@ export default function Home() {
     <>
       <LandingPopup/>
       <div className="full-flex-centered">
-{/* <Contacts/> */}
-        {/* <Slick/> */}
-        {/* <ContactFire/> */}
+
         <LandingPage />
-
-
-        {/* <PricingPage /> */}
-
-        {/* <div> */}
-        {/* <AnimInfoCard 
-        backgroundImage="/images/home/home3.png"
-        title="Your Title"
-        body="Your description here."
-      /> */}
-        {/* </div> */}
-
-        {/* <AboutPage/>
-            <ProcedurePage/> */}
-
-
-        {/* </div> */}
       </div>
     </>
   );
