@@ -159,6 +159,7 @@
     display: flex;
     gap: 2em;
     margin-inline: 4em;
+    margin-bottom: 180px;
 }
 
 .mapContainer {
