@@ -11,16 +11,34 @@ import ContactFire from '@/components/contactFire/contactFire';
 import AnimInfoCard from '@/components/animInfoCard/animInfoCard';
 import Packages from '@/components/packages/packages';
 import PricingPage from './pricing/pricingPage';
+import Contacts from './contacts/contactsPage';
 
 export default function Home() {
   return (
     <>
-       <LandingPopup/> 
+      <LandingPopup/>
       <div className="full-flex-centered">
-    <LandingPage />
+{/* <Contacts/> */}
+        {/* <Slick/> */}
+        {/* <ContactFire/> */}
+        <LandingPage />
 
 
+        {/* <PricingPage /> */}
 
+        {/* <div> */}
+        {/* <AnimInfoCard 
+        backgroundImage="/images/home/home3.png"
+        title="Your Title"
+        body="Your description here."
+      /> */}
+        {/* </div> */}
+
+        {/* <AboutPage/>
+            <ProcedurePage/> */}
+
+
+        {/* </div> */}
       </div>
     </>
   );

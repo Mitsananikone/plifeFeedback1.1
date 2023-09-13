@@ -1,6 +1,7 @@
 /** @format */
 
 import React, { useEffect, useRef } from "react";
+import Link from "next/link";
 import styles from "./about.module.css";
 
 export default function AboutPage() {
@@ -84,7 +85,9 @@ export default function AboutPage() {
             us help you enhance your natural beauty and boost your confidence.
             Contact us today to start planning your cosmetic surgery holiday!“
           </p>
-          <button className={styles.submitButton}>REQUEST QUOTE</button>
+          <Link href="/contacts/contactsPage">
+        <button className={styles.submitButton}>REQUEST QUOTE</button>
+    </Link>
         </div>
         
       </div>

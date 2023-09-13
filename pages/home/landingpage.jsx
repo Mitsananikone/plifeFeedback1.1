@@ -16,7 +16,7 @@ const FadeInSection = ({ children }) => {
     const controls = useAnimation();
     const [ref, inView] = useInView({
         triggerOnce: true,
-        threshold: 0.1,
+        threshold: 0.01,
     });
 
     useEffect(() => {
@@ -30,9 +30,9 @@ const FadeInSection = ({ children }) => {
             initial="hidden"
             variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 100 },
+                hidden: { opacity: 0, y: 200 },
             }}
-            transition={{ duration: 1.5, ease: "easeOut", delay: 0.8 }}
+            transition={{ duration: 2, ease: "easeOut", delay: 0.4 }}
         >
             {children}
         </motion.div>

@@ -1,0 +1,195 @@
+.contactPage {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    height: 100vh;
+}
+
+.section {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    border-radius: 0;
+    overflow: hidden;
+    max-height: 55vh;
+    /* border: 1px solid red; */
+}
+
+.sectionImage {
+    flex: 1;
+    max-width: 50%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.sectionsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    height: 50vh;
+    border-radius: 0
+  }
+
+.section {
+    width: 33.33%;
+}
+
+
+.sectionText {
+    display: flex;
+    flex: 1.5;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.sectionText h2 {
+    margin-top: 0;
+    color: #333;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.sectionText p {
+    margin-top: 2em;
+    color: #303030;
+    line-height: 1.6;
+    font-size: large;
+}
+.leftSide {
+    flex: 1;
+    padding: 2em;
+    font-weight: 600;
+}
+
+.rightSide {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;          /* Turns on flexbox */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center;    /* Vertically centers the content */
+    height: auto;           
+   
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5), /* Highlight */ -1px -1px 2px rgba(0, 0, 0, 0.25), /* Top-left shadow */ 1px -1px 2px rgba(0, 0, 0, 0.25), /* Top-right shadow */ -1px 1px 2px rgba(0, 0, 0, 0.25), /* Bottom-left shadow */ 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.title > h1 {
+    font-size: 3em;
+    color: #4d4d4d;
+}
+
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contactForm input,
+.contactForm select,
+.contactForm textarea,
+.contactForm button {
+    padding: 0.8em;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+}
+
+.contactForm button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contactForm button:hover {
+    background-color: #333;
+}
+
+.contactForm button:active {
+    background-color: #555;
+}
+
+.privacyPolicy {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.directContact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-inline: 8em;
+}
+
+.directContact > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.directContact h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;  /* Stack children (icon and text) vertically */
+    align-items: center;     /* Center children horizontally */
+    justify-content: center; /* Center children vertically if there's extra space */
+}
+
+.icon {
+    margin-bottom: 0.5em;
+
+}
+
+.mapAndFormSection {
+    margin-top: 180px;
+    display: flex;
+    gap: 2em;
+    margin-inline: 4em;
+}
+
+.mapContainer {
+    /* border: 1px solid red; */
+    flex: 4;   
+    height: 50vh;
+}
+
+.formContainer {
+    /* border: 1px solid red; */
+    height: 100vh;
+    flex: 2;  
+    height: 50vh;
+}
+
+@keyframes fadeInUpwards {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeIn {
+    animation: fadeInUpwards 1.5s forwards;
+  }
+  
+  .hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
