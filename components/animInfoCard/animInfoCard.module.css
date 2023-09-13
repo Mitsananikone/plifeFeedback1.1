@@ -85,6 +85,7 @@
   color: white;
   z-index: 2; /* Keeps title above the description */
   margin-top: -32px;
+  margin-bottom: 32px;
 }
 
 .cardContent > p {

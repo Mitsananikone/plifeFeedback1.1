@@ -17,7 +17,7 @@ const Navbar = () => {
     { name: "QUOTE", link: "#quote" },
     { name: "PRICING", link: "/pricing/pricingPage" },
     { name: "PROMO", link: "#promo" },
-    { name: "CONTACTS", link: "#contacts" }, 
+    { name: "CONTACTS", link: "/contacts/contactsPage" }, 
   ];
 
   return (
